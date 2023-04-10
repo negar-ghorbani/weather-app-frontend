@@ -1,0 +1,159 @@
+body {
+    margin: 0;
+    background-color: #e6e6e6 !important;
+}
+
+
+#weather_results {
+    background-color: #ffffff;
+    opacity: 0.8;
+    /* background-image: radial-gradient(#ababab 0.5px, transparent 0.5px), radial-gradient(#ababab 0.5px, #ffffff 0.5px); */
+    background-color: #e6e6e6;
+    background-size: 20px 20px;
+    background-position: 0 0, 10px 10px;
+    /* height: 100vh; */
+    padding: 2%;
+}
+
+input#location {
+    border: 0 none;
+}
+
+input#location:focus {
+    border-bottom: 2px solid black;
+    outline-offset: 0px;
+    outline: none;
+}
+
+.header {
+    font-family: 'Indie Flower', cursive;
+    font-size: larger;
+    color: #636363;
+    text-align: center;
+    font-size: 40px;
+    padding: 30px;
+}
+
+.header-container {
+    /* background-color: #dddddd; */
+    padding: 2%;
+}
+
+.autocomplete {
+    height: 40vh;
+    background-image: url(./img/joshua-reddekopp-7Oq9r2CiTLg-unsplash.jpg);
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    border: none;
+    /* background-color: #000000; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.search-container {
+    display: inline-block;
+    width: 40%;
+    position: relative;
+    margin: 1% 2% 1% 25%;
+}
+
+.search-container input,
+.search-container .suggestions {
+    width: 100%;
+    background: #fff;
+    text-align: left;
+}
+
+.search-container input {
+    background: rgba(255, 255, 255, 0.8);
+    height: 60px;
+    padding: 0 10px;
+}
+
+.search-container .suggestions {
+    position: absolute;
+    top: 60px;
+}
+
+ul {
+    display: none;
+    list-style-type: none;
+    padding: 0;
+    padding-left: 0 !important;
+    margin: 0;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+    max-height: 150px;
+    overflow-y: auto;
+}
+
+ul.has-suggestions {
+    display: block;
+}
+
+ul li {
+    padding: 10px;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+ul li:hover {
+    background-color: #dadada;
+}
+
+input#location {
+    border-bottom: 2px solid #808587;
+}
+
+.unit-toggle {
+    position: relative;
+    display: inline-block;
+}
+
+.toggle.ios,
+.toggle-on.ios,
+.toggle-off.ios {
+    border-radius: 5px;
+    background-color: #D3D4D5;
+}
+
+.toggle.ios .toggle-handle {
+    border-radius: 5px;
+    background-color: #D3D4D5;
+}
+
+#current_weather {
+    display: none;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 2%;
+    width: 80%;
+    height: 40vh;
+    margin: auto;
+    /* display: flex; */
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather-info {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10%;
+    padding-bottom: 4%;
+}
+
+#icon i {
+    font-size: 10rem;
+    color: black;
+}
+#place {
+    font-size: 2rem;
+    font-weight: 500;
+}
+#time {
+    font-size: 1.5rem;
+    padding-bottom: 7%;
+}
+
